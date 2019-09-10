@@ -1,0 +1,100 @@
+% Document template
+\documentclass	[a4paper,11pt, hidelinks]{article}
+
+% Support for including graphics
+\usepackage		{graphicx}
+
+% Support for creating PS/PDF graphics
+\usepackage		{pgf}
+
+% Support for creating plots
+\usepackage		{pgfplots}
+
+% Support for creating drawings
+\usepackage		{tikz} 
+
+% Support for extensive control of page headers and footers
+\usepackage		{fancyhdr}
+
+% Support for hypertext
+\usepackage		{hyperref}
+
+% Support for adding background
+\usepackage		{background}
+
+% Support for tables with adjustable-width columns
+\usepackage		{tabularx}
+
+% Support for publication quality tables
+\usepackage		{booktabs}
+
+% Support for tabular cells spanning multiple rows
+\usepackage		{multirow}
+
+% Support for Driver-independent color extensions
+\usepackage		{xcolor}
+
+% Support for hyphenation for letterspacing, underlining
+\usepackage		{soul}	
+
+% Support for date and time
+\usepackage		{datetime}
+
+% Create vertical text
+\SetBgContents	{}
+\SetBgPosition	{current page.west}
+\SetBgVshift	{-1.8cm}
+\SetBgOpacity	{1}
+\SetBgAngle		{90.0}
+\SetBgScale		{1.2}
+\SetBgAnchor	{}
+
+% Set creation date
+\newdate		{date}{21}{06}{2018}
+\date			{\displaydate{date}}
+
+% Remove paragraph indent
+\setlength		{\parindent}{0em}
+
+% Add after paragraph spacing
+\setlength		{\parskip}{0.5em}
+
+% Set images path
+\graphicspath	{{images/}}
+
+% Clear all header and footers
+\fancyhf		{}
+
+% Remove the header rule
+\renewcommand	{\headrulewidth}{0pt}
+
+% Set page number in right footer
+\rfoot			{\thepage}							
+
+% Set header
+\chead			{}
+
+% Set left footer
+\lfoot			{}
+\AtEndDocument	{\lfoot{}}
+
+% Set page styles as fancy
+\pagestyle		{fancy}
+
+% Set document Title
+\title{Document Title}
+\author{ 
+	Author Name\\
+	\small{Affiliation}\\
+}
+
+% Document
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+
+\vspace*{\fill}
+\rule{\textwidth}{0.4pt}
+\footnotesize \textbf{Note.} Lorem ipsum dolor sit amet.
+\end{document}
