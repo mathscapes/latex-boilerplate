@@ -40,6 +40,19 @@
 % Support for date and time
 \usepackage		{datetime}
 
+% AMS Maths package
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axiom}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{definition}{Definition}
+
+\newcommand{\nc}{\color{red}[Needs citation]}
+
 % Create vertical text
 \SetBgContents	{}
 \SetBgPosition	{current page.west}
